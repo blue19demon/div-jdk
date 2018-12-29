@@ -1,4 +1,4 @@
-package com.lando.dp;
+package com.lando.dp.iterator;
 
 public interface Iterator {
 	public Object next();

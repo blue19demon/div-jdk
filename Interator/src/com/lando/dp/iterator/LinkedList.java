@@ -1,4 +1,4 @@
-package com.lando.dp;
+package com.lando.dp.iterator;
 
 public class LinkedList<E> implements Collection<E>{
 

@@ -1,4 +1,4 @@
-package com.lando.dp;
+package com.lando.dp.iterator;
 
 public interface Collection<E> {
 	public void add(E o);

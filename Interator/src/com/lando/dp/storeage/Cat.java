@@ -6,6 +6,17 @@ public class Cat implements Comparable<Cat>{
 	
 	private int weight;
 
+	private Comparator<Cat> comparator=new CatSortComparator();
+	
+	
+	public Comparator<Cat> getComparator() {
+		return comparator;
+	}
+
+	public void setComparator(Comparator<Cat> comparator) {
+		this.comparator = comparator;
+	}
+
 	public Cat() {
 		super();
 	}
@@ -39,7 +50,7 @@ public class Cat implements Comparable<Cat>{
 
 	@Override
 	public int compareTo(Cat o) {
-		return this.heigth-o.getHeigth();
+		return comparator.compare(this, o);
 	}
 	
 }
